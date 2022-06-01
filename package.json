@@ -2,10 +2,6 @@
   "name": "tailwind-config-akarion",
   "version": "1.0.0",
   "description": "tailwind configuration for akarion compliance cloud",
-  "main": "tailwind.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AkarionDevelopers/tailwind-config-akarion.git"
