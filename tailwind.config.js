@@ -234,11 +234,6 @@ module.exports = {
           dark: colors.gray.dark,
         },
       },
-      fill: {
-        gray: {
-          light: colors.gray.light,
-        },
-      },
       spacing: {
         88: '22rem',
         104: '26rem',
