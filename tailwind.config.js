@@ -219,7 +219,7 @@ module.exports = {
       borderColor: {
         gray: {
           light: colors.gray.light, // $colorListColumnBorder
-          dark: colors.gray.dark, // $colorListColumnBorder
+          dark: colors.gray.dark,
         },
         'bluish-gray': {
           lightest: colors['bluish-gray'].lightest, // $colorBorder
