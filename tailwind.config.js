@@ -3,9 +3,9 @@
  *
  * Use Tailwind CSS IntelliSense extention for class completion!
  * https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
- * 
- * 
- * 
+ *
+ *
+ *
  * --- MIGRATION GUIDE
  *
  * -- FONTS
@@ -15,7 +15,7 @@
  *
  * We defined 4 Headlines + one Eyebrow and 3 body text sizes.
  *
- * 
+ *
  * - HEADLINES (old → new)
  *
  * H1 → removed
@@ -25,13 +25,13 @@
  * H5 → H3 (16px)
  * Table Head → H4 (14px)
  *
- * 
+ *
  * - BODY
  * base (16px)
  * sm (14px)
  * xs (12px)
- * 
- * 
+ *
+ *
  * -- SPACINGS
  *
  * Spacings are defined in 4px steps.
@@ -196,18 +196,20 @@ module.exports = {
       textColor: {
         blue: '#226FFF', // $colorLink, same as dataprotection (defined in theme.css)
         gray: {
-          DEFAULT: colors.gray.DEFAULT, // $colorTextLight
-          dark: colors.gray.dark, // $colorText
+          DEFAULT: colors.gray.DEFAULT, // Use for light text ($colorTextLight)
+          dark: colors.gray.dark, // Use for default text ($colorText)
         },
       },
       backgroundColor: {
         yellow: '#E6D574', // $colorInfo, $colorComplementary, $colorHighlightBackground[opacity]
         gray: {
-          lightest: colors.gray.lightest, // $colorBackground, $colorHoverBackgroundOnWhite
-          light: colors.gray.light, // $colorActiveBackgroundOnWhite, $colorListHeadBackground
+          lightest: colors.gray.lightest, // Use for standard background ($colorBackground)
+          light: colors.gray.light, // Use for hover background ($colorHoverBackgroundOnWhite)
         },
         'bluish-gray': {
-          dark: colors['bluish-gray'].dark, // $colorSurface
+          lightest: colors['bluish-gray'].lightest, // Use for gray background on standard background ($colorListHeadBackground)
+          light: colors['bluish-gray'].light, // Use for active/focus background ($colorActiveBackgroundOnWhite)
+          dark: colors['bluish-gray'].dark, // Use for dark background ($colorSurface)
         },
         'red-5': getRgb(colorsRgb.red.rgb, 0.05), // $colorAlertBackground
         'red-30': getRgb(colorsRgb.red.rgb, 0.3), // $colorAlertBackgroundSolid
@@ -218,12 +220,11 @@ module.exports = {
       },
       borderColor: {
         gray: {
-          light: colors.gray.light, // $colorListColumnBorder
-          dark: colors.gray.dark,
+          dark: colors.gray.dark, // Use for dark borders
         },
         'bluish-gray': {
-          lightest: colors['bluish-gray'].lightest, // $colorBorder
-          light: colors['bluish-gray'].light, // $colorFormBorder, $colorListHeadColumnBorder
+          lightest: colors['bluish-gray'].lightest, // Use for standard border ($colorBorder, $colorListColumnBorder)
+          light: colors['bluish-gray'].light, // Use for border on bluish-gray-lightest background ($colorFormBorder, $colorListHeadColumnBorder)
         },
         'red-50': getRgb(colorsRgb.red.rgb, 0.5), // $colorAlertBorder
         'orange-50': getRgb(colorsRgb.orange.rgb, 0.5), // $colorInfoBorder
