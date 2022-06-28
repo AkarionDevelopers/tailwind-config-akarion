@@ -260,6 +260,7 @@ module.exports = {
         '100vh': '100vh',
       },
       minWidth: {
+        20: '5rem',
         40: '10rem',
         60: '15rem',
         80: '20rem',
@@ -279,6 +280,9 @@ module.exports = {
         144: '36rem',
         200: '50rem',
         352: '88rem',
+      },
+      listStyleType: {
+        'lower-latin': 'lower-latin',
       },
     },
     configViewer: {
