@@ -127,10 +127,12 @@ module.exports = {
     fontSize: {
       '2xs': ['0.688rem', '0.875rem'], // ['11px', '14px']
       xs: ['0.75rem', '1rem'], // ['12px', '16px']
-      sm: ['0.875rem', '1.25rem'], // ['14px', '20px']
-      base: ['16px', '1.25rem'], // ['16px', '20px']
+      base: ['0.875rem', '1.25rem'], // ['14px', '20px']
+      md: ['16px', '1.25rem'], // ['16px', '20px']
       lg: ['1.125rem', '1.25rem'], // ['18px', '20px']
       xl: ['1.75rem', '2.25rem'], // ['28px', '36px']
+      'icon-md': ['1.2rem'],
+      'icon-lg': ['1.5rem'],
     },
     fontWeight: {
       normal: 400,
