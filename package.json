@@ -1,6 +1,6 @@
 {
   "name": "tailwind-config-akarion",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "tailwind configuration for akarion compliance cloud",
   "main": "tailwind.config.js",
   "repository": {
