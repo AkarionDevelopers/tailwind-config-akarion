@@ -131,6 +131,8 @@ module.exports = {
       md: ['16px', '1.25rem'], // ['16px', '20px']
       lg: ['1.125rem', '1.25rem'], // ['18px', '20px']
       xl: ['1.75rem', '2.25rem'], // ['28px', '36px']
+      'icon-md': ['1.2rem'],
+      'icon-lg': ['1.5rem'],
     },
     fontWeight: {
       normal: 400,
