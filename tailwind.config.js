@@ -1,46 +1,6 @@
 /**
- * ----- VS CODE EXTENTION
- *
  * Use Tailwind CSS IntelliSense extention for class completion!
  * https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
- *
- *
- *
- * --- MIGRATION GUIDE
- *
- * -- FONTS
- *
- * We removed Light and Black fonts. Now only Roman (400) and Heavy (800)
- * can be used.
- *
- * We defined 4 Headlines + one Eyebrow and 3 body text sizes.
- *
- *
- * - HEADLINES (old → new)
- *
- * H1 → removed
- * H2 → H1 (28px)
- * H3 → H2 (18px)
- * H4 → Eyebrow (11px)
- * H5 → H3 (16px)
- * Table Head → H4 (14px)
- *
- *
- * - BODY
- * base (16px)
- * sm (14px)
- * xs (12px)
- *
- *
- * -- SPACINGS
- *
- * Spacings are defined in 4px steps.
- *
- *
- * -- BORDER WIDTH
- *
- * Use 2px for everything. If smth can't be mapped nicely talk to design
- * department.
  */
 
 // https://tailwindcss.com/docs/customizing-colors#using-css-variables
@@ -203,14 +163,14 @@ module.exports = {
         },
       },
       backgroundColor: {
+        'primary-10': 'rgb(var(--tw-color-primary) / 0.1)', // Use for hover background ($colorHoverBackgroundOnWhite)
+        'primary-20': 'rgb(var(--tw-color-primary) / 0.2)', // Use for active/focus background ($colorActiveBackgroundOnWhite)
         yellow: '#E6D574', // $colorInfo, $colorComplementary, $colorHighlightBackground[opacity]
         gray: {
           lightest: colors.gray.lightest, // Use for standard background ($colorBackground)
-          light: colors.gray.light, // Use for hover background ($colorHoverBackgroundOnWhite)
         },
         'bluish-gray': {
           lightest: colors['bluish-gray'].lightest, // Use for gray background on standard background ($colorListHeadBackground)
-          light: colors['bluish-gray'].light, // Use for active/focus background ($colorActiveBackgroundOnWhite)
           dark: colors['bluish-gray'].dark, // Use for dark background ($colorSurface)
         },
         'red-5': getRgb(colorsRgb.red.rgb, 0.05), // $colorAlertBackground
