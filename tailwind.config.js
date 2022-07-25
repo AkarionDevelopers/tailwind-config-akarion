@@ -48,25 +48,21 @@ const colorsRgb = {
 
 module.exports = {
   prefix: 'tw-',
-  mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
-  purge: {
-    content: [
-      './public/**/*.html',
-      './src/**/*.vue',
-    ],
-    safelist: [
-      'fade-enter-active',
-      'fade-leave-active',
-      'fade-enter',
-      'fade-leave-to',
+  content: [
+    './public/**/*.html',
+    './src/**/*.vue',
+  ],
+  safelist: [
+    'fade-enter-active',
+    'fade-leave-active',
+    'fade-enter',
+    'fade-leave-to',
 
-      // the following is used in MdChanges.vue
-      'tw-bg-green-30',
-      'tw-bg-red-30',
-      'tw-line-through',
-    ],
-  },
+    // the following is used in MdChanges.vue
+    'tw-bg-green-30',
+    'tw-bg-red-30',
+    'tw-line-through',
+  ],
   theme: {
     /**
      * Stylings here are overwritten
