@@ -3,6 +3,49 @@
  * https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
  */
 
+// https://tailwindcss.com/docs/customizing-colors#using-css-variables
+function withOpacityValue(variable) {
+  return ({ opacityValue }) => {
+    if (opacityValue === undefined) {
+      return `rgb(var(${variable}))`;
+    }
+    return `rgb(var(${variable}) / ${opacityValue})`;
+  };
+}
+
+function getRgb(rgb, opacity = null) {
+  if (opacity === null) return `rgb(${rgb})`;
+
+  return `rgba(${rgb}, ${opacity})`;
+}
+
+const colors = {
+  gray: {
+    lightest: '#F9F9F9',
+    light: '#E8E8E8',
+    DEFAULT: '#797979',
+    dark: '#161718',
+  },
+  'bluish-gray': {
+    lightest: '#EAECEF',
+    light: '#D6D9E0',
+    DEFAULT: '#6B7486',
+    dark: '#0C2047',
+  },
+};
+
+const colorsRgb = {
+  red: {
+    rgb: '214, 73, 51',
+  },
+  orange: {
+    rgb: '245, 166, 35',
+  },
+  green: {
+    rgb: '132, 195, 23',
+  },
+};
+
 module.exports = {
   prefix: 'tw-',
   content: [
@@ -212,47 +255,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
-
-// https://tailwindcss.com/docs/customizing-colors#using-css-variables
-function withOpacityValue(variable) {
-  return ({ opacityValue }) => {
-    if (opacityValue === undefined) {
-      return `rgb(var(${variable}))`;
-    }
-    return `rgb(var(${variable}) / ${opacityValue})`;
-  };
-}
-
-function getRgb(rgb, opacity = null) {
-  if (opacity === null) return `rgb(${rgb})`;
-
-  return `rgba(${rgb}, ${opacity})`;
-}
-
-const colors = {
-  gray: {
-    lightest: '#F9F9F9',
-    light: '#E8E8E8',
-    DEFAULT: '#797979',
-    dark: '#161718',
-  },
-  'bluish-gray': {
-    lightest: '#EAECEF',
-    light: '#D6D9E0',
-    DEFAULT: '#6B7486',
-    dark: '#0C2047',
-  },
-};
-
-const colorsRgb = {
-  red: {
-    rgb: '214, 73, 51',
-  },
-  orange: {
-    rgb: '245, 166, 35',
-  },
-  green: {
-    rgb: '132, 195, 23',
-  },
 };
