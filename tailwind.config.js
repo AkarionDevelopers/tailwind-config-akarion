@@ -53,9 +53,11 @@ module.exports = {
     './public/**/*.html',
     './src/**/*.vue',
     // Nuxt projects
-    './pages/**/*.vue',
+    './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
-    './components/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
   safelist: [
     'fade-enter-active',
