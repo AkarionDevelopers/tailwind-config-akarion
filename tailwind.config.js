@@ -214,7 +214,6 @@ module.exports = {
         '100vh': '100vh',
       },
       minHeight: {
-        32: '8rem',
         40: '10rem',
         60: '15rem',
         80: '20rem',
