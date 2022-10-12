@@ -88,8 +88,8 @@ module.exports = {
      * For styling body text you should use only XS, SM and BASE (which is default anyways).
      */
     fontSize: {
-      '2xs': ['0.688rem', '0.875rem'], // ['11px', '14px']
-      xs: ['0.75rem', '1rem'], // ['12px', '16px']
+      xs: ['0.688rem', '0.875rem'], // ['11px', '14px']
+      sm: ['0.75rem', '1rem'], // ['12px', '16px']
       base: ['0.875rem', '1.25rem'], // ['14px', '20px']
       md: ['16px', '1.25rem'], // ['16px', '20px']
       lg: ['1.125rem', '1.25rem'], // ['18px', '20px']
