@@ -94,8 +94,11 @@ module.exports = {
       md: ['16px', '1.25rem'], // ['16px', '20px']
       lg: ['1.125rem', '1.25rem'], // ['18px', '20px']
       xl: ['1.75rem', '2.25rem'], // ['28px', '36px']
-      'icon-md': ['1.125rem'], // 18px
-      'icon-lg': ['1.5rem'], // 24px
+      'icon-sm': '0.75rem', // 12px
+      'icon-base': '0.875rem', // 14px
+      'icon-lg': '1.125rem', // 18px
+      'icon-xl': '1.5rem', // 24px
+      'icon-2xl': '2.25rem', // 36px
     },
     fontWeight: {
       normal: 400,
