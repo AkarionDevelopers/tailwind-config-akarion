@@ -248,6 +248,7 @@ module.exports = {
         128: '32rem',
         144: '36rem',
         200: '50rem',
+        280: '70rem',
         352: '88rem',
       },
       listStyleType: {
