@@ -136,6 +136,7 @@ module.exports = {
       DEFAULT: '1px',
       0: 0,
       2: '2px',
+      4: '4px',
     },
     borderStyle: {
       solid: 'solid',
