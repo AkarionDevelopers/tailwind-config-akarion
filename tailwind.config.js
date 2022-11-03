@@ -255,6 +255,20 @@ module.exports = {
       listStyleType: {
         'lower-latin': 'lower-latin',
       },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 100 },
+        },
+        'slide-in': {
+          '0%': { transform: 'translateX(50px)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 200ms',
+        'slide-in': 'slide-in 200ms',
+      },
     },
     configViewer: {
       themeReplacements: {
