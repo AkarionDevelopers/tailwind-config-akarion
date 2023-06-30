@@ -91,7 +91,7 @@ module.exports = {
       xs: ['0.688rem', '0.875rem'], // ['11px', '14px']
       sm: ['0.75rem', '1rem'], // ['12px', '16px']
       base: ['0.875rem', '1.25rem'], // ['14px', '20px']
-      md: ['16px', '1.25rem'], // ['16px', '20px']
+      md: ['1rem', '1.25rem'], // ['16px', '20px']
       lg: ['1.125rem', '1.25rem'], // ['18px', '20px']
       xl: ['1.75rem', '2.25rem'], // ['28px', '36px']
       'icon-xs': '0.75rem', // 12px
