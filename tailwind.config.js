@@ -23,7 +23,7 @@ const colors = {
   gray: {
     lightest: '#F9F9F9',
     light: '#E8E8E8',
-    DEFAULT: '#797979',
+    DEFAULT: '#757575',
     dark: '#161718',
   },
   'bluish-gray': {
@@ -36,7 +36,7 @@ const colors = {
 
 const colorsRgb = {
   red: {
-    rgb: '214, 73, 51',
+    rgb: '213, 65, 42',
   },
   orange: {
     rgb: '245, 166, 35',
