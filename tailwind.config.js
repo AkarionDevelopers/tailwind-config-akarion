@@ -163,7 +163,7 @@ module.exports = {
        * Stylings here are extended
        */
       textColor: {
-        blue: '#226FFF', // $colorLink, same as dataprotection (defined in theme.css)
+        blue: '#0054F0', // $colorLink
         gray: {
           DEFAULT: colors.gray.DEFAULT, // Use for light text ($colorTextLight)
           dark: colors.gray.dark, // Use for default text ($colorText)
