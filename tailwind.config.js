@@ -82,6 +82,7 @@ module.exports = {
     },
     fontFamily: {
       body: ['Avenir', 'sans-serif'],
+      code: ['SFMono-Regular','Menlo','monospace'],
     },
     /**
      * Use components for styling: AkH1, AkH2, AkH3, AkH4, AkEyebrow
