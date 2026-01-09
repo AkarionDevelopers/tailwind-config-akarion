@@ -173,6 +173,7 @@ module.exports = {
       backgroundColor: {
         'primary-10': 'rgb(var(--tw-color-primary) / 0.1)', // Use for hover background ($colorHoverBackgroundOnWhite)
         'primary-20': 'rgb(var(--tw-color-primary) / 0.2)', // Use for active/focus background ($colorActiveBackgroundOnWhite)
+        'primary-30': 'rgb(var(--tw-color-primary) / 0.3)',
         yellow: '#E6D574', // $colorInfo, $colorComplementary, $colorHighlightBackground[opacity]
         gray: {
           lightest: colors.gray.lightest, // Use for standard background ($colorBackground)
